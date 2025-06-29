@@ -4089,5 +4089,59 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+/* mobile hero section */
+/* 🔹 DEFAULT: Mobile - Normal behavior (cropped full screen) */
+@media (max-width: 767px) and (max-aspect-ratio: 9/16) {
+  .hero-slider .img-bg {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
 
+  .hero-slider .item {
+    height: 100vh;
+  }
+}
+
+/* 🔹 Mobile Desktop Site Mode (landscape aspect ratio OR forced desktop site) */
+@media (max-width: 767px) and (min-aspect-ratio: 16/9) {
+  .hero-slider .img-bg {
+    background-size: contain !important;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .hero-slider .item {
+    height: auto; /* allow it to shrink */
+    min-height: auto;
+    aspect-ratio: 16 / 9; /* maintain the video-style box */
+  }
+
+  .hero-slider .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .hero-slider .caption h1 {
+    font-size: 1.8em;
+    color: #fff;
+  }
+
+  .hero-slider .caption p {
+    font-size: 1em;
+    color: #ddd;
+  }
+
+  .hero-slider .banner-button a {
+    font-size: 0.9em;
+    padding: 10px 20px !important;
+  }
+}
 
