@@ -4091,32 +4091,4 @@ body {
 }
 
 /* hero section photos */
-/* Default behavior for normal mobile (keep it full height) */
-@media (max-width: 767px) and (max-aspect-ratio: 9/16) {
-  .hero-slider .img-bg {
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-/* Mobile in Desktop Site Mode (e.g. landscape or browser forced desktop mode) */
-@media (max-width: 767px) and (min-aspect-ratio: 16/9) {
-  .hero-slider .img-bg {
-    background-size: contain !important;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  .hero-slider .item {
-    height: 56.25vw; /* 16:9 aspect ratio (100vw × 9/16) */
-  }
-}
-
-@media (max-width: 767px) and (min-aspect-ratio: 16/9) {
-  .hero-slider .caption {
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-  }
-}
 
