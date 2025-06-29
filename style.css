@@ -4198,3 +4198,59 @@ body {
     font-size: 0.9em;
   }
 }
+
+/* Normal mobile portrait view (keep cropped) */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .hero-slider .img-bg {
+    background-size: cover !important;
+    background-position: center center;
+    height: 100vh;
+  }
+
+  .hero-slider .item {
+    height: 100vh;
+  }
+}
+
+/* Mobile desktop-site or landscape mode (YouTube-like) */
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  .hero-slider .img-bg {
+    background-size: contain !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-slider .item {
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    min-height: 250px;
+  }
+
+  .hero-slider .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .hero-slider .caption h1 {
+    font-size: 1.8em;
+    color: #fff;
+  }
+
+  .hero-slider .caption p {
+    font-size: 1em;
+    color: #eee;
+  }
+
+  .hero-slider .banner-button a {
+    padding: 10px 20px !important;
+    font-size: 0.9em;
+  }
+}
+
