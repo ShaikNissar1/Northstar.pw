@@ -191,42 +191,7 @@ $("#services-slider").owlCarousel({
 });
         // -------------------------------------------
 
-        function adjustHeroForDesktopMode() {
-  const isMobile = window.innerWidth <= 767;
-  const isLandscape = window.innerWidth > window.innerHeight;
 
-  const heroItems = document.querySelectorAll(".hero-slider .item");
-  const bgImages = document.querySelectorAll(".hero-slider .img-bg");
-
-  if (isMobile && isLandscape) {
-    // Desktop-site mode or landscape on mobile
-    heroItems.forEach(item => {
-      item.style.height = "auto";
-      item.style.aspectRatio = "16 / 9";
-    });
-
-    bgImages.forEach(img => {
-      img.style.backgroundSize = "contain";
-      img.style.backgroundRepeat = "no-repeat";
-      img.style.backgroundPosition = "center center";
-    });
-  } else {
-    // Normal mobile view
-    heroItems.forEach(item => {
-      item.style.height = "100vh";
-    });
-
-    bgImages.forEach(img => {
-      img.style.backgroundSize = "cover";
-      img.style.backgroundPosition = "center center";
-      img.style.backgroundRepeat = "no-repeat";
-    });
-  }
-}
-
-// Call it on load and resize
-window.addEventListener("load", adjustHeroForDesktopMode);
-window.addEventListener("resize", adjustHeroForDesktopMode);
 
 
         // Testimonials Slider (already named testimonial-carousel-one in template)
