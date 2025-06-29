@@ -4254,3 +4254,7 @@ body {
   }
 }
 
+.hero-slider .img-bg {
+  background-size: cover !important;
+}
+
