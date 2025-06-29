@@ -4061,3 +4061,32 @@ body {
 .section-title02 .sm-title:after {
   display: none;
 }
+
+/* fonts */
+html {
+  font-size: 16px; /* Base size */
+}
+
+body {
+  font-size: 1rem; /* Ensure text scales consistently */
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-us-section p,
+  .about-us-section h2,
+  .about-us-section h4,
+  .about-us-section h3,
+  .two-arms-section p,
+  .two-arms-section h3 {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
