@@ -1502,9 +1502,7 @@ h6 a:focus,
   display: block;
 }
 
-.about-us-section .about-text {
-  /* Styles adjusted to match template's text hierarchy */
-}
+
 
 .about-us-section .about-text h2 {
   font-size: 2.8em;
@@ -4062,6 +4060,7 @@ body {
   display: none;
 }
 
+
 /* fonts */
 html {
   font-size: 16px; /* Base size */
@@ -4089,3 +4088,80 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+
+
+/* hero section photos mobile */
+
+/* Professional layout constraint for all major sections */
+section {
+  width: 100%;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+section > .container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+
+
+header .container,
+footer .container,
+.hero-slider .container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+/* testimonial */
+
+/* Testimonial Section Fix */
+.testimonial-carousel-one .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .testimonial-card {
+    max-width: 600px; /* Or 500px for smaller layout */
+  }
+}
+
+
+section {
+  overflow-x: hidden;
+}
+
+
+/* Fix for testimonial card alignment */
+.testimonial-carousel-one .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 750px; /* adjust as needed */
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
